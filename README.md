@@ -27,11 +27,13 @@ By completing this assignment, you will:
 ### Option 2: Local Development
 
 **Requirements:**
+
 - Java 21 or higher
 - Gradle (or use included wrapper)
 - Git (optional)
 
 **Verify setup:**
+
 ```bash
 java -version
 ./gradlew --version
@@ -44,11 +46,13 @@ Analyze algorithms 1-5 (algorithm 6 is optional bonus) from the provided pseudoc
 ### What to Count
 
 Count **every statement that executes**, including:
+
 - Variable initializations (`s = 0`, `t = 1`)
 - Loop body statements (`s = s + t * b[i]`)
 - Array assignments (`A[i,j,k] = ...`)
 
 **Do NOT count:**
+
 - Loop condition checks
 - Function calls or returns
 - Comments or blank lines
@@ -73,8 +77,9 @@ The comprehensive test suite shows detailed execution traces for all algorithms:
 ```
 
 This will run all algorithms with various input sizes and print detailed execution information including:
+
 - Every loop iteration
-- Variable values at each step  
+- Variable values at each step
 - Statement counts for verification
 - Expected vs actual results
 
@@ -90,36 +95,37 @@ You can modify the main method in `AlgorithmAnalysis.java` to test specific case
 
 ### Step 3: Complete Your Analysis
 
-Fill out the `ANALYSIS.md` file with:
-
-1. **Step-by-step mathematical analysis** for each algorithm
-2. **Final f(n) functions** expressing exact statement counts
-3. **Verification** using test output
-4. **Reflection questions** about growth rates and patterns
+Fill out the `ANALYSIS.md` file with **step-by-step explaination** and a **final f(n) function** expressing the exact statement count for each algorithm.
 
 ## The Algorithms
 
 ### Algorithm 1: Linear Processing with Powers of 2
+
 - **Pattern**: Simple loop with array access
 - **Key insight**: Each iteration does the same amount of work
 
-### Algorithm 2: Double Nested Loops  
+### Algorithm 2: Double Nested Loops
+
 - **Pattern**: Every combination of i and j from 1 to n
 - **Key insight**: Inner loop always executes n times
 
 ### Algorithm 3: Triple Nested Loops
+
 - **Pattern**: Three-dimensional processing
 - **Key insight**: Cubic growth pattern
 
 ### Algorithm 4: Triangular Nested Loops
+
 - **Pattern**: Inner loop bound depends on outer loop variable
 - **Key insight**: Not all nested loops are equal!
 
 ### Algorithm 5: Logarithmic While Loop
+
 - **Pattern**: Repeatedly divide input by 2
 - **Key insight**: How many times can you halve n?
 
 ### Algorithm 6: Triple Triangular Loops (Bonus)
+
 - **Pattern**: Three levels of triangular nesting
 - **Key insight**: Very fast growth rate
 
@@ -130,9 +136,8 @@ For Algorithm 1:
 1. **Read the pseudocode** and understand what it does
 2. **Run the test** and observe the execution trace
 3. **Count initialization statements**: `s = 0` and `t = 1` → 2 statements
-4. **Analyze the loop**: executes n times, 2 statements per iteration → 2n statements  
+4. **Analyze the loop**: executes n times, 2 statements per iteration → 2n statements
 5. **Combine**: f₁(n) = 2 + 2n
-6. **Verify**: Check that f₁(1) = 4, f₁(2) = 6, f₁(4) = 10 match test output
 
 ## Submission Instructions
 
@@ -143,21 +148,22 @@ For Algorithm 1:
 3. **Create submission file** using one of these methods:
 
 #### Method 1: DevContainer (Recommended)
+
 ```bash
-tar -czf pa1-YOURNAME.tar.gz /workspace
+tar -czf pa1-YOURNAME.zip /workspace
 ```
+
 Then download the file from the container.
 
 #### Method 2: Local Development
-Right-click the assignment folder and compress to ZIP, or use:
-```bash
-zip -r pa1-YOURNAME.zip .
-```
+
+Right-click the assignment folder and compress to ZIP.
 
 ### What to Submit
 
 Your compressed file should contain:
-- `ANALYSIS.md` - **Your completed mathematical analysis** 
+
+- `ANALYSIS.md` - **Your completed mathematical analysis**
 - All original starter code files (unchanged Java files are fine)
 - Any additional test cases you created (optional)
 
@@ -165,30 +171,13 @@ Your compressed file should contain:
 
 ## Grading Criteria
 
-- **Mathematical Analysis (60%)**: Correct f(n) functions for algorithms 1-5
-- **Show Your Work (25%)**: Clear step-by-step analysis in ANALYSIS.md  
-- **Verification (10%)**: Using test output to check your answers
-- **Reflection (5%)**: Thoughtful answers to reflection questions
-- **Bonus**: Algorithm 6 analysis (up to 10% extra credit)
+- **Submission (33.3%):** Work made available to instructoras required by submission guidelines. Software artifacts are located and named as specified in the assignment.
+- **Completeness (33.3%):** All problems are attempted. Incomplete problems are also incorrect.
+- **Correctness (33.3%):** Work demonstrates a clear understanding of the material.
+- **Bonus**: Algorithm 6 analysis (up to 20% extra credit)
 
 ## Getting Help
 
-### Understanding the Algorithms
-- **Run the tests first**: `./gradlew test` shows exactly what each algorithm does
-- **Start with small inputs**: Manually trace through n=1, n=2 cases
-- **Use the pseudocode**: It's the authoritative source
-
-### Mathematical Analysis  
-- **Count systematically**: Don't skip any statements
-- **Use summation formulas**: Remember ∑(i=1 to n) i = n(n+1)/2
-- **Check your work**: Your f(n) should match the test output
-
-### Technical Issues
-- **Container won't start**: Try "Rebuild Container" in VS Code
-- **Gradle errors**: Run `./gradlew clean` then `./gradlew test`
-- **Java version**: Ensure Java 21+ with `java -version`
-
-### Getting Course Help
 - **Office Hours**: Tuesday & Wednesday 12:30-1:30 PM (Herman 207)
 - **Syllabot**: Use the course AI assistant for conceptual questions
 - **Discussion**: Talk through approaches with classmates (but write your own analysis)
@@ -196,31 +185,18 @@ Your compressed file should contain:
 ## Academic Integrity
 
 This is an **individual assignment**. You may:
+
 - Discuss approaches and concepts with classmates
-- Use course materials and textbook  
+- Use course materials and textbook
 - Ask questions during office hours
 - Use the provided Java code to understand the algorithms
 
 You may **NOT**:
+
 - Copy analysis from other students
 - Use AI tools to generate mathematical solutions
 - Submit work you don't understand
 - Share your completed ANALYSIS.md file
-
-## Important Dates
-
-- **Assigned**: [Assignment Date]
-- **Due**: September 18, 11:59 PM
-- **Late Policy**: 10% per day, maximum 5 days
-
-## Tips for Success
-
-1. **Start early**: Algorithm analysis takes practice and reflection
-2. **Use the test output**: It's your best verification tool  
-3. **Think systematically**: Count every statement, every time it executes
-4. **Check edge cases**: What happens when n=1? n=0?
-5. **Show your work**: Partial credit is awarded for clear reasoning
-6. **Break down complex algorithms**: Analyze them step by step
 
 The goal is to understand why these algorithms have different growth patterns and develop skills in systematic algorithm analysis.
 
