@@ -93,18 +93,4 @@ public class AlgorithmAnalysisTest {
         AlgorithmAnalysis.algorithm5(16);
     }
 
-    @Test
-    @DisplayName("Algorithm 6: Triple Triangular Loops (Bonus)")
-    public void testAlgorithm6() {
-        System.out.println("\n=== ALGORITHM 6 TEST CASES (BONUS) ===");
-        
-        System.out.println("n=1:");
-        AlgorithmAnalysis.algorithm6(1);
-        
-        System.out.println("\nn=2:");
-        AlgorithmAnalysis.algorithm6(2);
-        
-        System.out.println("\nn=3:");
-        AlgorithmAnalysis.algorithm6(3);
-    }
 }

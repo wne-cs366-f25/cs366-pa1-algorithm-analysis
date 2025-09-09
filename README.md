@@ -41,7 +41,7 @@ java -version
 
 ## Your Task
 
-Analyze algorithms 1-5 (algorithm 6 is optional bonus) from the provided pseudocode and determine the **exact number of statements executed** as a function of n.
+Analyze algorithms 1-5 from the provided pseudocode and determine the **exact number of statements executed** as a function of n.
 
 ### What to Count
 
@@ -124,10 +124,6 @@ Fill out the `ANALYSIS.md` file with **step-by-step explaination** and a **final
 - **Pattern**: Repeatedly divide input by 2
 - **Key insight**: How many times can you halve n?
 
-### Algorithm 6: Triple Triangular Loops (Bonus)
-
-- **Pattern**: Three levels of triangular nesting
-- **Key insight**: Very fast growth rate
 
 ## Example Analysis Workflow
 
@@ -174,7 +170,6 @@ Your compressed file should contain:
 - **Submission (33.3%):** Work made available to instructoras required by submission guidelines. Software artifacts are located and named as specified in the assignment.
 - **Completeness (33.3%):** All problems are attempted. Incomplete problems are also incorrect.
 - **Correctness (33.3%):** Work demonstrates a clear understanding of the material.
-- **Bonus**: Algorithm 6 analysis (up to 20% extra credit)
 
 ## Getting Help
 

@@ -92,19 +92,3 @@ while (n > 1)
 
 [your answer here]
 
----
-
-## Algorithm 6 Analysis (Bonus - Optional)
-
-input positive int n
-
-**Pseudocode:**
-```
-p = 1
-for i = 1 to n
-  for j = 1 to i
-    for k = 1 to j
-      p = p * (i + j + k)
-```
-
-[your answer here]

@@ -140,33 +140,6 @@ public class AlgorithmAnalysis {
         return s;
     }
 
-    /**
-     * Algorithm 6 (Bonus): input n
-     * p = 1
-     * for i = 1 to n
-     *   for j = 1 to i
-     *     for k = 1 to j
-     *       p = p * (i + j + k)
-     * 
-     * @param n input size
-     * @return the computed product p
-     */
-    public static long algorithm6(int n) {
-        if (n < 0) throw new IllegalArgumentException("n must be non-negative");
-        
-        long p = 1;
-        
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= i; j++) {
-                for (int k = 1; k <= j; k++) {
-                    System.out.println("Algorithm 6: i=" + i + ", j=" + j + ", k=" + k);
-                    p = p * (i + j + k);
-                }
-            }
-        }
-        
-        return p;
-    }
 
     /**
      * Simple main method for basic testing and experimentation.
