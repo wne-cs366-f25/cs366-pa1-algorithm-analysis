@@ -43,12 +43,13 @@ for i = 1 to n
 
 1. `s = 0` - executes once
 2. `t = 1` - executes once
-3. Loop condition `i = 1 to n` - checked (n+1) times (n times true, 1 time false)
-4. Loop body executes n times:
+3. Loop initialization `i = 1` - executes once
+4. Loop condition `i <= n` - checked (n+1) times (n times true, 1 time false)
+5. Loop body executes n times:
    - `s = s + t * b[n-i+1]` - executes n times
    - `t = 2 * t` - executes n times
 
-**Total statements:** 1 + 1 + (n+1) + n + n = **4n + 3**
+**Total statements:** 1 + 1 + 1 + (n+1) + n + n = **4n + 4**
 
 ---
 
