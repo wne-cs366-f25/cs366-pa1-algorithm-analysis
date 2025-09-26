@@ -92,7 +92,7 @@ for i = 1 to n
 4. Loop body:
    - `s = s + i*j` - executes n² times
 
-**Total statements:** 1 + 1 + (n+1) + n + n + n(n+1) + n² + n² = **3n² + 3n + 3**
+**Total statements:** 1 + 1 + (n+1) + n + n + n(n+1) + n² + n² = **3n² + 4n + 3**
 
 ---
 
@@ -137,7 +137,7 @@ for i = 1 to n
 4. Loop body:
    - `A[i, j, k] = A[i, j, k] + A[j, k, i] * A[k, i, j]` - executes n³ times
 
-**Total statements:** 1 + (n+1) + n + n + n(n+1) + n² + n² + n²(n+1) + n³ + n³ = **3n³ + 3n² + 3n + 2**
+**Total statements:** 1 + (n+1) + n + n + n(n+1) + n² + n² + n²(n+1) + n³ + n³ = **3n³ + 4n² + 4n + 2**
 
 ---
 
@@ -194,7 +194,7 @@ for i = 1 to n
    - `t = t*j` - executes n(n+1)/2 times
    - `s = s + t` - executes n(n+1)/2 times
 
-**Total statements:** 1 + 1 + 1 + (n+1) + n + n + n(n+3)/2 + n(n+1)/2 + n(n+1)/2 + n(n+1)/2 = **2n² + 4n + 3**
+**Total statements:** 1 + 1 + 1 + (n+1) + n + n + n(n+3)/2 + n(n+1)/2 + n(n+1)/2 + n(n+1)/2 = **2n² + 6n + 4**
 
 ---
 
